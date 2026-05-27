@@ -1,5 +1,5 @@
 """
-RM93 代辦清單應用程式
+RM93 待辦清單應用程式
 一個功能完整的待辦事項管理工具，提供任務追蹤、優先順序管理、歷史紀錄等功能。
 
 主要組件:
@@ -25,7 +25,7 @@ class HistoryWindow(QWidget):
     def __init__(self):
         """初始化歷史紀錄窗口，設置表格和UI樣式"""
         super().__init__()
-        self.setWindowTitle("代辦任務歷史紀錄")
+        self.setWindowTitle("待辦任務歷史紀錄")
         self.resize(600, 400)
         
         # 設置應用圖標
@@ -202,7 +202,7 @@ class DesktopTodo(QWidget):
         self.main_layout.setSpacing(0)
 
         # 標題列
-        title = QLabel("📌 RM93 代辦清單")
+        title = QLabel("📌 RM93 待辦清單")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet("font-weight: bold; font-size: 15px; padding: 10px; background: #F0E68C; border-bottom: 1px solid #E6DB74;")
         self.main_layout.addWidget(title)
